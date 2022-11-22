@@ -1,0 +1,7 @@
+node_modules
+**/videos/*
+**/screenshots/*
+**/results/junit/*
+**/results/mochawesome/*
+mochawesome*
+.vs
