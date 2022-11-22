@@ -1,6 +1,10 @@
+import RandomInt from "./randomInt";
+const randomInt = new RandomInt()
 class Random {
 
-    nameSurname(quantity) {
+    nameSurname(min, max) {
+        
+        const quantity = randomInt.getRandomInt(min,max)
 
         let text = "",
             symbols = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 -_.",
@@ -20,7 +24,11 @@ class Random {
         }
     }
 
-    email(quantityOne, quantityTwo, quantityThree) {
+    email(min1, max1, min2, max2, min3, max3) {
+
+        const quantityOne = randomInt.getRandomInt(min1,max1),
+              quantityTwo = randomInt.getRandomInt(min2,max2),
+              quantityThree = randomInt.getRandomInt(min3,max3);
 
         let textOne = "",
             textTwo = "",
@@ -65,7 +73,9 @@ class Random {
         }
     }
 
-    password(quantity) {
+    password(min, max) {
+
+        const quantity = randomInt.getRandomInt(min,max)
 
         let text = "",
             symbols = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@."
