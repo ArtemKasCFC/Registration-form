@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/ArtemKasCFC/Registration-form#readme",
   "devDependencies": {
-    "cypress": "^10.9.0"
+    "cypress": "^11.1.0"
   }
 }
